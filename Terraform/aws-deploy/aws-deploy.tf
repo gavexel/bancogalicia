@@ -15,7 +15,7 @@ default = "terraform-test"
 resource "aws_instance" "machine1" {
 ami = "ami-04b9e92b5572fa0d1"
 instance_type = "t2.micro"
-availability_zone = "us-east-1b"
+availability_zone = "us-weast-1a"
 tags = {
 "type" = var.myTag
 }
