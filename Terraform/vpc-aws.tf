@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIAQKVCMFAOSPMJWNMF"
-  secret_key = "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"
+  #access_key = "AKIAQKVCMFAOSPMJWNMF"
+  #secret_key = "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"
 }
 
 #Create key-pair for logging into EC2 in us-east-1
@@ -69,8 +69,8 @@ resource "aws_subnet" "subnet" {
 
 
 #Create SG for allowing TCP/80 & TCP/22
-resource "aws_security_group" "sg" {
-  name        = "sg"
+resource "aws_security_group" "sg1" {
+  name        = "sg1"
   description = "Allow TCP/80 & TCP/22"
   vpc_id      = aws_vpc.vpc.id
   ingress {
